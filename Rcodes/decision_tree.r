@@ -1,0 +1,10 @@
+data('iris')
+str(iris)
+dim(iris)
+summary(iris)
+head(iris)
+tail(iris)
+
+library(party)
+newtree<-ctree(Species~.,iris)
+plot(newtree,main = 'Decision Tree')
